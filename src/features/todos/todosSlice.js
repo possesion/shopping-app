@@ -26,8 +26,10 @@ const tasks = createSlice({
             }
         },
         deleteTask: (state, { payload: { id } }) => {
-            const x = state.allIds.filter(item => item !== id);
-            state.allIds = x;
+            const filterAllIds = state.allIds.filter(item => item !== id);
+            const getRidofTask = _.omit(state.byId, id);
+            state.byId = getRidofTask;
+            state.allIds = filterAllIds;
         },
         toggleTask: (state, { payload: { id } }) => {
             const complete = state.byId[id].state;

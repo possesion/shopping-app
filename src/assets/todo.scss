@@ -1,0 +1,23 @@
+.card-background {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #d5d2ec;
+    color: #4d4d4d;
+}
+
+.position {
+    justify-content: space-around;
+}
+
+.card-size {
+    height: 100vh;
+}
+
+.card-btn {
+    border: none;
+    outline: none;
+    background: transparent;
+    text-decoration: none;
+
+}

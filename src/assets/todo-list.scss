@@ -1,0 +1,54 @@
+.todo-list {
+    :last-child {
+        border: none;
+    }
+}
+
+.list-element {
+    transition: all 1s;
+    background: #f6eba4;
+    padding: 3px 7px;
+    margin-bottom: 2px;
+    border-bottom: 2px solid rgb(165, 165, 187);
+    border-radius: 4px;
+    box-shadow: 0 4px 14px #00000070;
+    opacity: 1;
+    transition: all 1s;
+}
+
+.shown {
+    // opacity: 1;
+    // height: auto;
+    // background: green;
+    transition: all .4s ease;
+}
+
+.text {
+    font-size: 18px;
+    font-weight: 700;
+    color: #4d4d4d;
+}
+
+// ANIMATION
+
+.remove-btn {
+    margin-right: 0.5rem;
+}
+
+.item-enter {
+    opacity: 0;
+}
+
+.item-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+
+.item-exit {
+    opacity: 1;
+}
+
+.item-exit-active {
+    opacity: 0;
+    transition: opacity 500ms ease-in;
+}
