@@ -6,7 +6,7 @@
 
 .list-element {
     transition: all 1s;
-    background: #f6eba4;
+    // background: #cbf8a6;
     padding: 3px 7px;
     margin-bottom: 2px;
     border-bottom: 2px solid rgb(165, 165, 187);
@@ -34,7 +34,10 @@
 .remove-btn {
     margin-right: 0.5rem;
 }
-
+.finished {
+    // text-decoration: line-through;
+    background: green;
+}
 .item-enter {
     opacity: 0;
 }
